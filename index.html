@@ -1,0 +1,254 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Casa do Saber — Saúde, Educação e Cultura</title>
+  <meta name="description" content="Casa do Saber: iniciativa guarda-chuva com pilares em saúde (Mult Saúde), educação (Domain RH) e cultura (Clube da Música)."/>
+  <link rel="icon" href="assets/logo.jpg"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script>
+    function toggleMenu(){document.getElementById('mobile').classList.toggle('open')}
+    function copyWhats(){
+      const el = document.getElementById('wa'); navigator.clipboard.writeText(el.href).then(()=>{const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000);})
+    }
+  </script>
+  <style>
+    #mobile{display:none;position:fixed;inset:56px 18px auto 18px;background:#fff;border:1px solid #e8ecfb;border-radius:16px;padding:14px;box-shadow:0 20px 50px rgba(17,23,51,.12)}
+    #mobile.open{display:block}
+    #mobile a{display:block;padding:10px 8px;color:#333;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-logo"><img alt="Logo Casa do Saber" src="assets/logo.jpg" width="24" height="24"/></div>
+        <strong>Casa do Saber</strong>
+      </div>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#pilares">Nossos Pilares</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#como-participar">Como Participar</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle btn ghost" aria-label="Abrir menu" onclick="toggleMenu()">Menu</button>
+    </div>
+    <div id="mobile" role="dialog" aria-modal="true">
+      <a href="#quem-somos" onclick="toggleMenu()">Quem Somos</a>
+      <a href="#pilares" onclick="toggleMenu()">Nossos Pilares</a>
+      <a href="#diferenciais" onclick="toggleMenu()">Diferenciais</a>
+      <a href="#como-participar" onclick="toggleMenu()">Como Participar</a>
+      <a href="#contato" onclick="toggleMenu()">Contato</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="capa" aria-label="Capa">
+      <div class="bg"></div>
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">Iniciativa social • acesso para todos</span>
+          <h1>Saúde, Educação e Cultura para transformar vidas</h1>
+          <p>Casa do Saber é um guarda-chuva institucional que integra três pilares que importam: <strong>Mult Saúde</strong>, <strong>Domain RH</strong> e <strong>Clube da Música</strong>. Atuação nacional, acessível online e presencial.</p>
+          <div style="display:flex; gap:12px; margin-top:18px">
+            <a class="btn" href="#como-participar">Quero participar</a>
+            <a class="btn outline" href="#pilares">Conheça os pilares</a>
+          </div>
+          <p class="small" style="margin-top:12px">Slogan: <em>“O conhecimento liberta!”</em></p>
+        </div>
+        <figure class="figure">
+          <img src="assets/hero.svg" alt="Ilustração representando saúde, educação e cultura" style="width:100%;height:100%;object-fit:cover"/>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="quem-somos">
+      <div class="container">
+        <h2>Quem Somos</h2>
+        <p class="lead">A <strong>Casa do Saber</strong> reúne iniciativas voltadas a ampliar o acesso a <strong>saúde</strong>, <strong>educação</strong> e <strong>cultura</strong>. Atuamos como um ecossistema colaborativo com parceiros públicos e privados, oferecendo serviços, formação e programação cultural.</p>
+        <div class="columns-2" style="margin-top:18px">
+          <div class="card">
+            <h3>Missão</h3>
+            <p>Promover qualidade de vida e desenvolvimento humano por meio de serviços de saúde acessíveis, educação prática e ações culturais transformadoras.</p>
+          </div>
+          <div class="card">
+            <h3>Visão</h3>
+            <p>Ser referência nacional na integração de saúde, educação e cultura com impacto social mensurável.</p>
+          </div>
+        </div>
+        <div class="columns-2" style="margin-top:12px">
+          <div class="card">
+            <h3>Valores</h3>
+            <ul class="list">
+              <li><span class="dot"></span> Acessibilidade e inclusão</li>
+              <li><span class="dot"></span> Ética, transparência e respeito</li>
+              <li><span class="dot"></span> Inovação com responsabilidade</li>
+              <li><span class="dot"></span> Parcerias sustentáveis</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Atuação</h3>
+            <p>Atendemos pessoas, empresas e órgãos públicos em todo o Brasil, com soluções online e presenciais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="pilares">
+      <div class="container">
+        <h2>Nossos Pilares</h2>
+        <p class="lead">Conheça os três pilares que sustentam a Casa do Saber e seus benefícios.</p>
+        <div class="grid-3">
+          <div class="card">
+            <span class="pill">Saúde — Mult Saúde</span>
+            <h3 style="margin-top:8px">Cuidados acessíveis para o dia a dia</h3>
+            <p>Serviços e planos focados em prevenção e orientação.</p>
+            <ul class="list">
+              <li><span class="dot"></span> Descontos em consultas e exames</li>
+              <li><span class="dot"></span> Carteirinha digital</li>
+              <li><span class="dot"></span> Teleorientação 24h</li>
+              <li><span class="dot"></span> Rede parceira nacional</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="pill">Educação — Domain RH</span>
+            <h3 style="margin-top:8px">Formação para pessoas e organizações</h3>
+            <p>Cursos, treinamentos e capacitações com foco em empregabilidade.</p>
+            <ul class="list">
+              <li><span class="dot"></span> Trilhas para jovens e profissionais</li>
+              <li><span class="dot"></span> Programas in-company</li>
+              <li><span class="dot"></span> Mentorias e oficinas</li>
+              <li><span class="dot"></span> Certificados digitais</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="pill">Cultura — Clube da Música</span>
+            <h3 style="margin-top:8px">Expressão e pertencimento</h3>
+            <p>Rádio online, projetos culturais e eventos.</p>
+            <ul class="list">
+              <li><span class="dot"></span> Programação musical</li>
+              <li><span class="dot"></span> Aulas e workshops</li>
+              <li><span class="dot"></span> Festivais e encontros</li>
+              <li><span class="dot"></span> Parcerias com artistas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <h2>Diferenciais</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Atuação nacional</h3>
+            <p>Presença em todas as regiões do Brasil com atendimento híbrido.</p>
+          </div>
+          <div class="card">
+            <h3>Acessibilidade</h3>
+            <p>Formatos online e presenciais com foco em inclusão.</p>
+          </div>
+          <div class="card">
+            <h3>Impacto social</h3>
+            <p>Métricas de alcance e transformação acompanhadas de forma contínua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="como-participar">
+      <div class="container">
+        <h2>Como Participar</h2>
+        <div class="columns-2" style="margin-top:10px">
+          <div class="card">
+            <h3>Pessoas físicas</h3>
+            <p>Escolha seu plano de saúde, inscreva-se nos cursos e participe dos eventos culturais.</p>
+            <table class="table" aria-label="Opções de adesão para pessoas físicas">
+              <tr><td>Plano Essencial</td><td>Benefícios básicos de saúde + 2 cursos/ano</td></tr>
+              <tr><td>Plano Plus</td><td>Benefícios ampliados + 5 cursos/ano + eventos</td></tr>
+              <tr><td>Plano Total</td><td>Rede completa + cursos ilimitados + acesso VIP</td></tr>
+            </table>
+            <a class="btn" href="#contato">Quero aderir</a>
+          </div>
+          <div class="card">
+            <h3>Empresas e Órgãos Públicos</h3>
+            <p>Parcerias para benefícios corporativos, programas de formação e ações culturais.</p>
+            <ul class="list">
+              <li><span class="dot"></span> Portal do colaborador</li>
+              <li><span class="dot"></span> Relatórios de impacto</li>
+              <li><span class="dot"></span> Programas customizados</li>
+            </ul>
+            <a class="btn outline" href="#contato">Quero ser parceiro</a>
+          </div>
+        </div>
+        <p class="small" style="margin-top:12px">Ao publicar o site, gere um QR Code apontando para o domínio final e substitua o bloco indicado em Contato.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="contact-grid">
+          <div class="card">
+            <form onsubmit="event.preventDefault(); alert('Mensagem enviada! (demo)');">
+              <label for="nome">Nome</label><br/>
+              <input id="nome" name="nome" placeholder="Seu nome" required/>
+              <br/><br/>
+              <label for="email">E‑mail</label><br/>
+              <input id="email" type="email" name="email" placeholder="voce@exemplo.com" required/>
+              <br/><br/>
+              <label for="msg">Mensagem</label><br/>
+              <textarea id="msg" name="mensagem" rows="5" placeholder="Conte como podemos ajudar"></textarea>
+              <br/><br/>
+              <button class="btn" type="submit">Enviar</button>
+              <p class="small">Este formulário é demonstrativo. Conecte a serviços como Formspree, Resend ou backend próprio.</p>
+            </form>
+          </div>
+          <div class="card">
+            <h3>Fale com a Casa do Saber</h3>
+            <ul class="list">
+              <li><span class="dot"></span> Endereço: Av. Exemplo, 123 — São Paulo/SP</li>
+              <li><span class="dot"></span> Telefone: (12) 98269-0712</li>
+              <li><span class="dot"></span> WhatsApp: <a id="wa" href="https://wa.me/5512982690712" target="_blank" rel="noopener">+55 12 98269-0712</a> <button class="btn ghost" onclick="copyWhats()">copiar</button></li>
+              <li><span class="dot"></span> E-mail: <a href="mailto:casadosaber.crz@gmail.com">casadosaber.crz@gmail.com</a></li>
+              <li><span class="dot"></span> Instagram: <a href="#" aria-label="Instagram">/casadosaber</a></li>
+            </ul>
+            <div style="display:grid;grid-template-columns:1fr 1fr; gap:12px; margin-top:14px">
+              <div class="qr" aria-label="QR Code de acesso (substituir após publicar)">
+                <span class="small">QR Code<br/>substituir</span>
+              </div>
+              <div>
+                <p class="small">Após hospedar, gere um QR Code para o domínio final (ex.: qr-code-generator.com) e troque a imagem ao lado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div>© 2025 Casa do Saber • Todos os direitos reservados.</div>
+      
+      
+      <div class="small" style="display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:space-between; width:100%">
+        <span>Política de Privacidade • Termos de Uso</span>
+        <div style="display:flex; gap:14px">
+          <a href="#" aria-label="Instagram"><svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .5 1.5 1s.8.9 1 1.5c.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1 1-1.5s.9-.8 1.5-1c.5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 0S4.4.1 3.6.3c-.9.2-1.6.5-2.3 1.2S.5 3.1.3 4c-.2.8-.3 1.2-.3 3.5S0 15.3.1 17c.2.9.5 1.6 1.2 2.3.7.7 1.4 1 2.3 1.2.8.2 1.2.3 3.5.3s2.7 0 3.5-.1c.9-.2 1.6-.5 2.3-1.2.7-.7 1-1.4 1.2-2.3.2-.8.3-1.2.3-3.5s0-2.7-.1-3.5c-.2-.9-.5-1.6-1.2-2.3-.7-.7-1.4-1-2.3-1.2-.8-.2-1.2-.3-3.5-.3z'/><circle cx='12' cy='12' r='3.2'/></svg></a>
+          <a href="#" aria-label="Facebook"><svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.716-1.796 1.765v2.316h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.675V1.325C24 .6 23.4 0 22.675 0z'/></svg></a>
+          <a href="#" aria-label="YouTube"><svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M23.498 6.186a2.978 2.978 0 0 0-2.098-2.115C19.62 3.5 12 3.5 12 3.5s-7.62 0-9.4.571A2.978 2.978 0 0 0 .502 6.186C0 8 0 12 0 12s0 4 .502 5.814a2.978 2.978 0 0 0 2.098 2.115C4.38 20.5 12 20.5 12 20.5s7.62 0 9.4-.571a2.978 2.978 0 0 0 2.098-2.115C24 16 24 12 24 12s0-4-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z'/></svg></a>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <div id="toast" class="toast">Link do WhatsApp copiado</div>
+</body>
+</html>
